@@ -1,3 +1,4 @@
+// Images and prices/ added more images to test sticky navbar
 const product = [
     {
         id: 0,
@@ -48,13 +49,15 @@ const product = [
         price: 100,
     }
 ];
-
+// image mapping
 const categories = [...new Set(product.map((item) => {
     return item
 }
 )
 )
 ]
+
+//add to cart button and rand symbol (R)
 let i = 0;
 document.getElementById('root').innerHTML = categories.map((item) => {
     var { image, title, price } = item;
@@ -75,16 +78,54 @@ document.getElementById('root').innerHTML = categories.map((item) => {
 var cart = [];
 
 // sticky navbar funtion
-window.onscroll = function() {myFunction()};
+window.onscroll = function () { myFunction() };
 
 var navbar = document.getElementById("header");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
 }
+
+// Add to cart function
+function addtocart(a) {
+    cart.push({ ...categories[a] });
+    displaycart();
+}
+function delElement(a) {
+    cart.splice(a, 1);
+    displaycart();
+}
+// Cart funntionallity/ store data
+function displaycart() {
+    let j = 0, total = 0;
+    document.getElementById("count").innerHTML = cart.length;
+    if (cart.length == 0) {
+        document.getElementById('cartItem').innerHTML = "Your cart is empty";
+        document.getElementById("total").innerHTML = "R " + 0 + ".00";
+    }
+
+    // Delete functiom and trash can symbol/add totals
+    else {
+        document.getElementById("cartItem").innerHTML = cart.map((items) => {
+            var { image, title, price } = items;
+            total = total + price;
+            document.getElementById("total").innerHTML = "R " + total + ".00";
+            return (
+                `<div class='cart-item'>
+                <div class='row-img'>
+                    <img class='rowimg' src=${image}>
+                </div>
+                <p style='font-size:12px;'>${title}</p>
+                <h2 style='font-size: 15px;'>R ${price}.00</h2>` +
+                "<i class='fa-solid fa-trash' onclick='delElement(" + (j++) + ")'></i></div>"
+            );
+        }).join('');
+    }
+}
+
 
