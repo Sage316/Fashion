@@ -218,3 +218,11 @@ a {
   top: 70%;
   left: 10%
 }
+/* Sticky navbar */
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  /* width: 100%; */
+}

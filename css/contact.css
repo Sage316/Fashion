@@ -115,3 +115,12 @@ p{
     transform: scale(1.2); 
     cursor: pointer;
   }
+
+  /* Sticky navbar */
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    /* width: 100%; */
+}
