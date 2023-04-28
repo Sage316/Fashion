@@ -84,7 +84,7 @@ body {
 #row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 80%;
     margin-bottom: 20px;
 }
@@ -94,6 +94,10 @@ body {
     width: auto;
 }
 
+ .home {
+    height: 100px;
+    width: auto;
+}
 .space {
     width: 10%
 }
