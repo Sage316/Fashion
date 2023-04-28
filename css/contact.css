@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    width: 80%;
+    height: 200px;
+    background-color: #00539CFF;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.spacer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* RedBeard */
+.header .logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #EEA47FFF;
+    padding: 7px 15px;
+}
+
+/* Fix hover over the home icons */
+.navbar ul li a:hover {
+    background-color: white;
+    color: #EEA47FFF;
+    border-radius: 3px;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    /* justify-content: space-between; */
+}
+
+#address {
+    display: flex;
+    width: 40%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#google-map {
+    display: flex;
+    width: 40%;
+
+}
