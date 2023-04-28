@@ -1,15 +1,15 @@
 
-
 body{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
 .top-bar{
 width: 80%;
 height: 4rem;
-background-color:#FBF8BE;
+background-color:#EEA47FFF;
 margin-bottom: 20px;
 display: flex;
 padding: 0px 20px;
@@ -18,52 +18,117 @@ justify-content: space-between;
 }
 
 .fa-solid{
-    color: #234E70;
+    color: #00539CFF;
     margin-right: 10px;
     }
     .header{
     width: 80%;
     height: 200px;
-    background-color:  #234E70;
+    background-color: #00539CFF;
     margin-bottom: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     }
-    .navbar{
+
+.header .logo{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+ .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     }
-    .navbar p{
+    .navbar-b{
     font-size: 30px;
     font-weight: bold;
     color: white;
     }
+
     .navbar ul{
     display: flex;
     list-style: none;
     }
-    .navbar ul li a{
+
+    .navbar ul li a {
     text-decoration: none;
     font-size: 18px;
-    color: white;
+    color:#EEA47FFF;
     padding: 7px 15px;
     }
-    .navbar ul li a:hover{
+
+    /* Fix hover over the home icons */
+    .navbar ul li a:hover {
     background-color: white;
-    color: #234E70;
+    color: #EEA47FFF;
     border-radius: 3px;
     }
+
     .navbar-b{
     display: flex;
     align-items: center;
     justify-content: space-between;
     }
     .dropdown{
-    width: 130px;
+    width: 100px;
     text-align: center;
     background-color: white;
     border-radius: 3px;
+    
     }
+
+.cart{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+.fa-solid{
+    color: #00539CFF;
+}
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: #EEA47FFF;
+    color: white;
+}
+.container{
+    display: flex;
+    width: 70%;
+    margin-bottom: 30px;
+}
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.sidebar{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.head{
+    background-color:#00539CFF;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
