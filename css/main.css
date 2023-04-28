@@ -132,3 +132,31 @@ justify-content: space-between;
     display: flex;
     align-items: center;
 }
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+.box{
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  border: 1px solid #EEA47FFF;
+  border-radius: 5px;
+        }
+
+.img-box{
+        width: 50%;
+        height: 170px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        }
+.images{
+    max-width: 250%;
+    max-height: 250%;
+    object-fit: cover;
+    object-position: center;
+}
