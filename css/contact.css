@@ -78,3 +78,23 @@ body {
     width: 40%;
 
 }
+
+#row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%
+}
+
+.team {
+    height: 500px;
+    width: auto;
+}
+
+.space {
+    width: 10%
+}
+#about-us {
+    width: 80%;
+    padding: 10px 0 20px 0;
+}
