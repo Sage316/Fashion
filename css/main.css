@@ -43,6 +43,7 @@ justify-content: space-between;
     justify-content: space-between;
     align-items: center;
     }
+
     .navbar-b{
     font-size: 30px;
     font-weight: bold;
@@ -73,6 +74,16 @@ justify-content: space-between;
     align-items: center;
     justify-content: space-between;
     }
+
+
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        z-index:1;
+        /* width: 100%; */
+      }
+
     .dropdown{
     width: 100px;
     text-align: center;
@@ -145,6 +156,7 @@ justify-content: space-between;
   padding: 100px;
   border: 1px solid #EEA47FFF;
   border-radius: 5px;
+  height: 200px;
         }
 
 .img-box{
@@ -155,8 +167,62 @@ justify-content: space-between;
         justify-content: center;
         }
 .images{
-    max-width: 250%;
-    max-height: 250%;
-    object-fit: cover;
-    object-position: center;
+    height: 100%;
+  
+}
+
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+h2{
+    font-size: 20px;
+    color: #00539CFF;
+}
+button{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: #00539CFF;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+button:hover{
+    background-color: #EEA47FFF;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.fa-trash:hover{
+    cursor: pointer;
+    color:#EEA47FFF;
 }
